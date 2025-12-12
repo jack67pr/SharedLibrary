@@ -345,4 +345,9 @@ public static class HttpUtils
         await res.OutputStream.WriteAsync(content);
         res.Close();
     }
+
+    internal static void AddPaginationHeaders<T>(HttpListenerRequest req, HttpListenerResponse res, Hashtable props, PagedResult<T> pagedResult, int page, int size)
+    {
+        throw new NotImplementedException();
+    }
 }
